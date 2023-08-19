@@ -2,7 +2,7 @@
 
 Сайт сделан с использованием фреймворка NextJs и TypeScript. Данные взяты из API [https://kinopoiskapiunofficial.tech/](https://kinopoiskapiunofficial.tech/)
 
-Сайт доступен по адресу [https://jenjarus.github.io/Next-Movie](https://jenjarus.github.io/Next-Movie)
+Сайт доступен по адресу [https://poiskkino.vercel.app/](https://poiskkino.vercel.app/)
 
 ### Функционал сайта
 - Адаптивность
