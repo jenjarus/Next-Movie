@@ -1,0 +1,11 @@
+@import "src/styles/variables";
+
+.not-found {
+  &__link {
+    @apply mt-6;
+
+    a {
+      @apply text-lg underline hover:no-underline;
+    }
+  }
+}

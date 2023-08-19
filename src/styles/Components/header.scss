@@ -1,0 +1,34 @@
+@import "src/styles/variables";
+
+.header {
+  @apply md:py-6 py-3 border-b-4 border-red-600 bg-stone-800;
+
+  &__wrap {
+    @include flex-between;
+  }
+
+  &__logo {
+    @apply text-xl text-white;
+
+    &-highlight {
+      @apply text-red-600;
+    }
+  }
+
+  &__favorite {
+    @apply relative;
+
+    svg {
+      @apply w-[30px] h-[30px];
+      @include transition;
+    }
+
+    &:hover svg {
+      @apply stroke-red-600;
+    }
+
+    &-count {
+      @apply w-[20px] h-[20px] absolute -bottom-[2px] -right-[9px] flex items-center justify-center bg-red-600 rounded-full text-sm text-white;
+    }
+  }
+}

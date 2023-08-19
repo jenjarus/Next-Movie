@@ -1,0 +1,11 @@
+@import "../variables";
+
+.top-page {
+  @apply w-16 h-16 fixed bottom-8 right-8 rounded-full bg-red-600 hover:bg-red-800 shadow-lg opacity-0 invisible;
+  @include flex-center;
+  @include transition;
+
+  &.show {
+    @apply opacity-100 visible;
+  }
+}

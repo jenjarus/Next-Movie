@@ -1,0 +1,20 @@
+@import "../../variables";
+
+.skeleton-card {
+  &__img {
+    @include skeletonBg();
+  }
+
+  &__text {
+    @apply h-40 flex flex-col justify-between p-6;
+  }
+
+  &__line {
+    @apply h-5;
+    @include skeletonBg();
+  }
+
+  &__line--blank {
+    @apply h-5;
+  }
+}

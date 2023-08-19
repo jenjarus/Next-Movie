@@ -1,0 +1,13 @@
+@import "src/styles/variables";
+
+.footer {
+  @apply md:mt-12 mt-6 py-6 border-t-4 border-red-600 bg-stone-800;
+
+  &__wrap {
+    @include flex-center;
+  }
+
+  &__copy {
+    @apply text-sm text-white;
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../variables";
+
+.viewed__section {
+  @apply my-7;
+
+  &-top {
+    @apply mb-6;
+    @include flex-between;
+  }
+
+  &-title {
+    @apply text-xl text-neutral-800 font-medium;
+  }
+
+  &-arrows {
+    @apply gap-1;
+    @include flex-between;
+
+    .viewed__section-arrow {
+      @apply p-1 mr-2 rounded-full bg-slate-300 hover:bg-red-300;
+      @include transition;
+
+      &.swiper-button-lock {
+        @apply hidden;
+      }
+    }
+  }
+
+  &-slider {
+    &.swiper-slider {
+      @apply -m-2;
+    }
+
+    .card {
+      @apply m-2 hover:shadow-md;
+    }
+  }
+}

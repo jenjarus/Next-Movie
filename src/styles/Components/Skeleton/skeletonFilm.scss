@@ -1,0 +1,42 @@
+@import "../../variables";
+
+.skeleton-film {
+  &__img {
+    @apply flex-none w-[300px] h-[445px] md:mr-6 max-md:mb-6;
+    @include skeletonBg();
+  }
+
+  &__title {
+    @apply w-2/4 h-10;
+    @include skeletonBg();
+  }
+
+  &__rating {
+    @apply w-16 h-16;
+    @include skeletonBg();
+  }
+
+  &__text {
+    &-title {
+      @apply w-24 h-7 mb-6;
+      @include skeletonBg();
+    }
+  }
+
+  &__line {
+    @apply h-5 my-3;
+    @include skeletonBg();
+
+    &--first {
+      @apply w-2/6;
+    }
+
+    &--second {
+      @apply w-3/6;
+    }
+
+    &--third {
+      @apply w-4/6;
+    }
+  }
+}

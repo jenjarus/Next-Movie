@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.search__dropdown {
+  &-item {
+    @apply py-1.5 px-2 hover:bg-slate-100;
+    @include flex-middle;
+    @include transition;
+  }
+
+  &-img {
+    @apply mr-2;
+    img {
+      @apply object-cover;
+    }
+  }
+
+  &-name {
+    @apply text-base font-medium text-neutral-800 line-clamp-1;
+  }
+
+  &-bottom {
+    @apply mt-2 gap-2 font-light;
+    @include flex-middle;
+  }
+
+  &-rating {
+    @apply text-green-500 font-medium;
+  }
+}

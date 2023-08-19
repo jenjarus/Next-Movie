@@ -1,0 +1,7 @@
+.loading-page {
+  @apply fixed h-screen w-screen bg-white z-[9];
+
+  svg {
+    @apply absolute top-0 bottom-0 left-0 right-0 m-auto;
+  }
+}

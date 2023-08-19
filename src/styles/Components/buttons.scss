@@ -1,0 +1,14 @@
+@import "src/styles/variables";
+
+.buttons {
+  @apply md:my-8 my-4;
+
+  &__wrapper {
+    @apply gap-2 md:flex-row flex-wrap;
+    @include flex-center;
+  }
+
+  &__link {
+    @apply sm:w-48 w-full px-3 py-2 rounded-md bg-red-600 hover:bg-red-500 text-white text-center cursor-pointer;
+  }
+}

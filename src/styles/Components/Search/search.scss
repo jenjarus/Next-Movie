@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.search {
+  &__wrapper {
+    @apply relative max-w-lg mx-auto text-sm;
+    @include flex-between;
+  }
+
+  &__input {
+    @apply grow py-1.5 px-2 rounded-l-md border border-r-0 border-stone-300 focus-within:border-red-600 appearance-none outline-0;
+    @include transition;
+  }
+
+  &__submit {
+    @apply py-1.5 px-3 border border-red-600 hover:border-red-800 bg-red-600 hover:bg-red-800 rounded-r-md;
+    @include transition;
+  }
+}

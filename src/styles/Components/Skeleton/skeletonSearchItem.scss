@@ -1,0 +1,22 @@
+@import "../../variables";
+
+.search-item {
+  &__img {
+    @apply w-[48px] h-[72px];
+    @include skeletonBg();
+  }
+
+  &__text {
+    @apply w-48;
+  }
+
+  &__name {
+    @apply w-full h-6;
+    @include skeletonBg();
+  }
+
+  &__bottom {
+    @apply w-2/3 h-3.5 mt-2;
+    @include skeletonBg();
+  }
+}
